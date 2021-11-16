@@ -45,7 +45,7 @@ I. Update the Bond Overview Sheets
 
 1. Login into your Bloomberg Professional Service account, you will need it to retrieve historical data.
 
-2. Type <SRCH> (Fixed Income Search) in the Bloomberg search bar. Add a field called <TICKER> and precede to enter the following individually to pull either Nominal or Real bond issuances. Note the structure of the *XXX_bond_overview.xlsx* sheets as we will be aiming to replicate the structure found within these worksheets, that being each sheet is reserved for one country. 
+2. Go to the Bloomberg terminal and type SRCH <GO> to bring up the Fixed Income Security Search function. Add a field called <TICKER> and precede to enter the following individually to pull either Nominal or Real bond issuances. Note the structure of the *XXX_bond_overview.xlsx* sheets as we aim to replicate the structure found within these worksheets, that being each sheet is reserved for one country. 
 
     Nominal Bonds
     * *Australia Government Bond = ACGB*
@@ -78,7 +78,7 @@ I. Update the Bond Overview Sheets
 |Issuer Name|Ticker|Cpn|Yld to Mty (Bid)|Maturity|Mty Type|Currency|Country/Region (Full Name)|First Cpn Date|Cpn Freq Des|Coupon Type|ISIN|Amt Issued|Amt Out|Issue Date|Security Name|Par Amount|Day Count|CUSIP|Inflation Index Ratio
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
-NOTE: The some bond tickers in **Step. 2** share identical ticker symbols for both nominal and real issues (see italicized). In order to distinguish the two we need to filter issues that contain a value in the column field **Inflation Index Ratio**. Sovereign issues with a ratio value (i.e., non-null) are "Inflation linked" and will be considered "Real Bonds," while those that lack such a ratio (i.e., null) will be considered "Nominal Bonds." 
+NOTE: Some bond tickers in **Step. 2** share identical ticker symbols for both nominal and real issues (see italicized). In order to distinguish the two we need to filter issues that contain a value in the column field **Inflation Index Ratio**. Sovereign issues with a ratio value (i.e., non-null) are "Inflation linked" and will be considered "Real Bonds," while those that lack such a ratio (i.e., null) will be considered "Nominal Bonds." 
 
 5. Once data fields are correctly retrieved we export the series and copy paste values to the corresponding sheet for each correct bond type (e.g., nominal_bond_overview -> FRA) 
     

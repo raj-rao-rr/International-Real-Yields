@@ -111,7 +111,7 @@ II. Pull New Price Data
   ```
 
 ## 5	Possible Extensions
-& Currently there is an issue fitting the zero-rate curve to the observed bond data, there is a persistent positive bias when fitting longer maturities for nominal and real bond yields that grossly overestimate the given yields. This should be fixed in future iterations of this code to prevent noisy series that don’t accurately reflect the observed data. 
+* Currently there is an issue fitting the zero-rate curve to the observed bond data, there is a persistent positive bias when fitting longer maturities for nominal and real bond yields that grossly overestimate the given yields. This should be fixed in future iterations of this code to prevent noisy series that don’t accurately reflect the observed data. 
 * Work on a method to automatically pull central bank fitted zero rates from Haver, with correct name mapping conventions. As of now this work is done manually, though some effort has been made with the Input/yeilds_haver.xlsx file, with Haver formulas for dynamically pulling data.
 * Work to improve the collection process for Bloomberg price data to be more efficient, and less suceptible to hard data querying limits
 

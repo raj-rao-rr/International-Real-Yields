@@ -81,11 +81,20 @@ end
 
 %% face value conventions for securities (refer to links below)
 
-% UK: https://www.dmo.gov.uk/responsibilities/gilt-market/about-gilts/
+% AUS: https://www2.asx.com.au/content/dam/asx/participants/cash-market/bonds/ASX-42301-AGB-Fact-Sheet.pdf
+% CAN:
 % FRA: https://www.aft.gouv.fr/en/oat-characteristics
+% GER:
+% KOR:
+% JPN: https://www.mof.go.jp/english/policy/jgbs/debt_management/guide.htm
+% SWE:
+% UK: https://www.dmo.gov.uk/responsibilities/gilt-market/about-gilts/
+% ITA:
+% US: https://www.treasurydirect.gov/indiv/research/indepth/tbills/res_tbill.htm
 
-keySet = {'UK','FRA'};
-valueSet = [100, 1];
+keySet = {'AUS', 'CAN', 'FRA', 'GER', 'KOR', 'JPN', 'SWE', 'UK', ...
+    'ITA', 'US'};
+valueSet = [100, 100, 1, 100, 100, 100, 100, 100, 100, 100];
 FaceValue = containers.Map(keySet,valueSet);
 
 fprintf('\n1. All data has been cleaned and processed.')

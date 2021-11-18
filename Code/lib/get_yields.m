@@ -11,9 +11,6 @@
 %   :param: flag (type int) - 1x1
 %       A Boolean flag to determine type of fit (i.e., nominal or real)
 %       NOTE: 1 = Real Bond, 0 = Nominal Bon files
-%   :param: type (type str) - 1x1
-%       A string identifier that points to using either the zero or par 
-%       yield curve fits when constructing our clean yields
 % 
 % Output:
 %   :param: yld (type TimeTable) - M x N matrix

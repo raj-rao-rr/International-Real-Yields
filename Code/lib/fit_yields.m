@@ -11,9 +11,6 @@
 %   :param: flag (type int) - 1x1
 %       A Boolean flag to determine type of fit (i.e., nominal or real)
 %       NOTE: 1 = Real Bond, 0 = Nominal Bond
-%   :param: face_value (type int) - 1x1
-%       A bonds conventions for securities according to the soveregin
-%       issuer's standard reporting for face value
 % 
 % Output:
 %   :param: curves (type TimeTable) - M x N matrix
@@ -192,7 +189,7 @@ function [curves, noise] = fit_yields(cnt, flag, face_value)
                 bonds(:, 1), bonds(:,2));
             
             % impose cut-off restrictions for accepting yields
-            % NOTE: Arbitary cutoffs for YTM > -2% and < 15%
+            % NOTE: Arbitary cutoffs for YTM > -3% and < 15%
             bonds = bonds((actual_yields > -0.02) | ...
                 (actual_yields < 0.15), :);
             
